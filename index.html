@@ -1,1 +1,78 @@
-...  
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nieuwsportal</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f4f4f4;
+color: #111;
+}
+
+
+/* Header */
+header {
+background: #bb1919;
+padding: 14px 20px;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+header h1 {
+margin: 0;
+font-size: 26px;
+font-weight: bold;
+}
+
+
+nav a {
+color: white;
+margin-left: 20px;
+text-decoration: none;
+font-weight: bold;
+}
+
+
+/* Layout */
+.container {
+display: grid;
+grid-template-columns: 2fr 1fr;
+gap: 20px;
+padding: 20px;
+max-width: 1200px;
+margin: auto;
+}
+
+
+/* Artikelen */
+.main-article {
+background: white;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.main-article img {
+width: 100%;
+border-radius: 8px;
+margin-bottom: 15px;
+}
+
+
+.main-article h2 {
+margin: 0 0 10px 0;
+font-size: 24px;
+}
+
+
+.article-list {
+display: flex;
+flex-direction: column;
+gap: 15px;
