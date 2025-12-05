@@ -1,78 +1,132 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Nieuwsportal</title>
-<style>
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: #f4f4f4;
-color: #111;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nieuwsportal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #111;
+    }
 
+    /* Header */
+    header {
+      background: #bb1919;
+      padding: 14px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-/* Header */
-header {
-background: #bb1919;
-padding: 14px 20px;
-color: white;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: bold;
+    }
 
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-header h1 {
-margin: 0;
-font-size: 26px;
-font-weight: bold;
-}
+    /* Layout */
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
+    /* Artikelen */
+    .main-article {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-nav a {
-color: white;
-margin-left: 20px;
-text-decoration: none;
-font-weight: bold;
-}
+    .main-article img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
 
+    .main-article h2 {
+      margin: 0 0 10px 0;
+      font-size: 24px;
+    }
 
-/* Layout */
-.container {
-display: grid;
-grid-template-columns: 2fr 1fr;
-gap: 20px;
-padding: 20px;
-max-width: 1200px;
-margin: auto;
-}
+    .article-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
 
+    .article-item {
+      background: white;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-/* Artikelen */
-.main-article {
-background: white;
-padding: 20px;
-border-radius: 8px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    .article-item h3 {
+      margin: 0 0 6px 0;
+      font-size: 18px;
+    }
 
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NIEUWS</h1>
+    <nav>
+      <a href="#">Binnenland</a>
+      <a href="#">Buitenland</a>
+      <a href="#">Sport</a>
+      <a href="#">Achtergrond</a>
+    </nav>
+  </header>
 
-.main-article img {
-width: 100%;
-border-radius: 8px;
-margin-bottom: 15px;
-}
+  <div class="container">
+    <div class="main-article">
+      <img src="https://via.placeholder.com/900x400" alt="Hoofdnieuws" />
+      <h2>Hoofdnieuws Titel — Groot artikel zoals op NOS</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum ligula eu lectus fermentum, sed congue nibh dapibus.</p>
+    </div>
 
+    <div class="article-list">
+      <div class="article-item">
+        <h3>Artikel 1 — Korte nieuwsupdate</h3>
+        <p>Korte beschrijving van het artikel.</p>
+      </div>
+      <div class="article-item">
+        <h3>Artikel 2 — Belangrijk nieuws</h3>
+        <p>Korte beschrijving van het artikel.</p>
+      </div>
+      <div class="article-item">
+        <h3>Artikel 3 — Laatste updates</h3>
+        <p>Korte beschrijving van het artikel.</p>
+      </div>
+    </div>
+  </div>
 
-.main-article h2 {
-margin: 0 0 10px 0;
-font-size: 24px;
-}
-
-
-.article-list {
-display: flex;
-flex-direction: column;
-gap: 15px;
+  <footer>
+    © 2025 Nieuwsportal — Gemaakt met GitHub
+  </footer>
+</body>
+</html>
