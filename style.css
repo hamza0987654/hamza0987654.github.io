@@ -1,0 +1,129 @@
+/* BASIS */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  color: #111;
+}
+
+/* HEADER */
+.topbar {
+  background: #bb1919;
+  color: white;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar .logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.menu a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* SUBNAV */
+.subnav {
+  background: #f4f4f4;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.subnav a {
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.subnav a:hover {
+  color: #bb1919;
+}
+
+/* GRID LAYOUT */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* HOOFDARTIKEL */
+.main-news {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.main-news img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.main-news h1 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+}
+
+/* ZIJ-NIEUWS */
+.side-news {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.news-card {
+  background: white;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.news-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.news-card h2 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+}
+
+/* FOOTER */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* MOBIEL */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .subnav {
+    flex-wrap: wrap;
+  }
+}
