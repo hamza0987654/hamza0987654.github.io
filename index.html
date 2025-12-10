@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NOS Style Nieuws</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nieuwswebsite</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- HEADER -->
-  <header class="topbar">
-    <div class="logo">NOS</div>
-    <nav class="menu">
-      <a href="#">Nieuws</a>
+  <div class="topbar">
+    <div class="logo">NieuwsPortal</div>
+
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Binnenland</a>
+      <a href="#">Buitenland</a>
       <a href="#">Sport</a>
-      <a href="#">Uitzendingen</a>
-      <a href="#">Weer</a>
-      <a href="#">Verkeer</a>
-    </nav>
-  </header>
+      <a href="#">Tech</a>
+    </div>
+  </div>
 
   <!-- SUBNAV -->
   <div class="subnav">
-    <a href="#">Binnenland</a>
-    <a href="#">Buitenland</a>
     <a href="#">Politiek</a>
     <a href="#">Economie</a>
-    <a href="#">Tech</a>
+    <a href="#">Weer</a>
+    <a href="#">Opinie</a>
+    <a href="#">Lifestyle</a>
+    <a href="#">Cultuur</a>
   </div>
 
-  <!-- CONTENT GRID -->
-  <main class="grid">
-    <article class="main-news">
-      <img src="https://via.placeholder.com/1200x600" alt="Hoofdnieuws">
-      <h1>Groot Hoofdnieuws zoals op NOS — Breaking News</h1>
-      <p>Dit is een voorbeeld van een grote headline, vergelijkbaar met hoe NOS hun hoofdartikel toont op de homepage.</p>
-    </article>
+  <!-- GRID -->
+  <div class="grid">
 
-    <section class="side-news">
+    <!-- HOOFDARTIKEL -->
+    <div class="main-news">
+      <img src="https://picsum.photos/900/400" alt="Hoofdnieuws">
+
+      <h1>Groot hoofdartikel met opvallende headline</h1>
+      <p>
+        Dit is een voorbeeld van het hoofdnieuws. Je kunt hier een langere samenvatting plaatsen
+        die goed zichtbaar is op de homepage. Het artikel bevat doorgaans de belangrijkste nieuwsgebeurtenis van de dag.
+      </p>
+    </div>
+
+    <!-- ZIJNIEUWS -->
+    <div class="side-news">
+
       <div class="news-card">
-        <img src="https://via.placeholder.com/400x200" alt="nieuws">
-        <h2>Belangrijk nieuwsitem</h2>
-        <p>Korte beschrijving van het artikel.</p>
+        <img src="https://picsum.photos/400/250?1" alt="nieuws">
+        <h2>Kort nieuwsbericht 1</h2>
+        <p>Kort stukje uitleg of samenvatting van het artikel.</p>
       </div>
 
       <div class="news-card">
-        <img src="https://via.placeholder.com/400x200" alt="nieuws">
-        <h2>Laatste update</h2>
-        <p>Laatste meldingen en updates — zoals NOS.</p>
+        <img src="https://picsum.photos/400/250?2" alt="nieuws">
+        <h2>Kort nieuwsbericht 2</h2>
+        <p>Een ander interessant nieuwsfeit dat bezoekers snel kunnen aanklikken.</p>
       </div>
 
       <div class="news-card">
-        <img src="https://via.placeholder.com/400x200" alt="nieuws">
-        <h2>Breaking tech nieuws</h2>
-        <p>Belangrijk nieuws vanuit de technologie sector.</p>
+        <img src="https://picsum.photos/400/250?3" alt="nieuws">
+        <h2>Kort nieuwsbericht 3</h2>
+        <p>Dit soort kaarten houden de homepage dynamisch en overzichtelijk.</p>
       </div>
-    </section>
-  </main>
+
+    </div>
+
+  </div>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    © 2025 NOS-Style Nieuwswebsite — Gemaakt voor jouw project
-  </footer>
+  <div class="footer">
+    © 2025 NieuwsPortal — Alle rechten voorbehouden.
+  </div>
+
 </body>
 </html>
