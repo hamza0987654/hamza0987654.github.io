@@ -166,3 +166,33 @@ body {
     gap: 10px;
   }
 }
+
+/* === AFBEELDINGEN (NOS-STYLE) === */
+
+.main-news img,
+.news-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 15px 0;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Afbeeldingen in zij-artikelen (index) */
+.news-card img {
+  max-height: 180px;
+}
+
+/* Grote artikel-afbeeldingen */
+.main-news img {
+  max-height: 420px;
+}
+
+/* Mobiel vriendelijk */
+@media (max-width: 768px) {
+  .main-news img,
+  .news-card img {
+    max-height: none;
+  }
+}
