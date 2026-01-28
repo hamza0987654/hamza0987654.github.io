@@ -196,3 +196,13 @@ body {
     max-height: none;
   }
 }
+
+.sources {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.sources li {
+  margin-bottom: 8px;
+}
+
